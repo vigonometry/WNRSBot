@@ -68,7 +68,7 @@ def getMessage():
 @server.route("/")
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url='https://shan-wnrsbot.herokuapp.com/' + TOKEN)
+    bot.set_webhook(url='https://wnrs-bot.herokuapp.com/' + TOKEN)
     return "!", 200
 
 
