@@ -1,11 +1,8 @@
 #Credits to https://github.com/eternnoir/pyTelegramBotAPI/blob/master/examples/reply_keyboard_markup_example.py for reference code in creation of the bot user interface
 
 #Note: you will need to run pip install requests and pip install pyTelegramBotAPI prior to running this bot
-import random
-import csv
-import telebot
+import random, csv, sys, os, telebot
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
-import os
 from flask import Flask, request
 
 TOKEN = os.environ.get('TELEGRAM_BOT_API', "string")
